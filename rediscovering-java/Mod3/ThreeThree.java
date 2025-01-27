@@ -1,9 +1,8 @@
-//Kirjoita ohjelma, joka kysyy käyttäjältä laivan hyttiluokan (LUX, A, B, C) ja tulostaa sen sanallisen kuvauksen alla olevan luettelon mukaisesti. Tehtävässä on käytettävä if/elif/else-toistorakennetta.
+//Kirjoita ohjelma, joka kysyy käyttäjän biologisen sukupuolen ja hemoglobiiniarvon (g/l). Ohjelma ilmoittaa, onko hemoglobiiniarvo alhainen, normaali vai korkea.
 
-//LUX on parvekkeellinen hytti yläkannella.
-//A on ikkunallinen hytti autokannen yläpuolella.
-//B on ikkunaton hytti autokannen yläpuolella.
-//C on ikkunaton hytti autokannen alapuolella.
+//Naisen normaali hemoglobiiniarvo on välillä 117-175 g/l.
+//Miehen normaali hemoglobiiniarvo on välillä 134-195 g/l.
+
 
 import java.util.Scanner;
 
