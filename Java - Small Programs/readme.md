@@ -1,1 +1,1 @@
-##Just some small programs for learning purposes
+## 📚 Just some small programs for learning purposes
