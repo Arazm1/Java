@@ -9,7 +9,7 @@ public class NumberGuessing {
 
     int randomNumber = random.nextInt(10) + 1;
 
-    int maxTries = 3;
+    int maxTries = 3; //You can change this value to set the maximum number of attempts.
     int tries = 0;
 
     System.out.println("Welcome to the Number Guessing Game!");
