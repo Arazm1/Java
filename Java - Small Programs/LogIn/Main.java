@@ -51,7 +51,7 @@ public class Main {
     public static void main(String[] args) {
         loginUsername();
 
-        scanner.close(); // Close scanner at the end
+        scanner.close();
     }
 
 }
