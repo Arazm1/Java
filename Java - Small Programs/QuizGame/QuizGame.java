@@ -1,9 +1,10 @@
 import java.util.Scanner;
 
 public class QuizGame {
+    static Scanner scanner = new Scanner(System.in);
 
-    public static void main(String[] args) {
 
+    static void TheGame() {
         String[] questions = { "What is the main function of a router?",
                 "Which part of the computer is considered the brain?",
                 "What year was Facebook launcher?",
@@ -20,8 +21,6 @@ public class QuizGame {
         int[] answers = { 3, 1, 2, 4, 3 };
         int score = 0;
         int guess;
-
-        Scanner scanner = new Scanner(System.in);
 
         System.out.println("*************************");
         System.out.println("Welcome to the Quiz Game!");
@@ -43,7 +42,7 @@ public class QuizGame {
                 System.out.println("Correct answer!");
                 score++;
             } else {
-                System.out.println("Wrong answer!");
+                System.out.println("Wrong answer! The correct answer was " + options[i][answers[i] - 1]);
             }
 
         }
@@ -52,6 +51,31 @@ public class QuizGame {
         System.out.println("Your final socre is: " + score + " out of " + questions.length + ".");
         System.out.println("********************************");
 
-        scanner.close();
+        
+        
     }
+
+
+
+
+
+
+    public static void main(String[] args) {
+
+        while (true) {
+            System.out.print("Would you like to play the Quiz Game? ");
+            String playOrNot = scanner.nextLine().trim().toLowerCase();
+
+            if (playOrNot.equals("yes") || playOrNot.equals("y")) {
+                TheGame();
+            } else {
+                System.out.println("Maybe next time...");
+                break;
+            }
+        }
+        scanner.close();
+
+
+        
+}
 }
